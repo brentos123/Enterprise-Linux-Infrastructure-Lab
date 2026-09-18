@@ -44,4 +44,24 @@ To integrate the Linux node into the existing corporate network block, system co
 <img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/0e0c102a-d9c1-4e27-b265-7666f55f8c0e" />
 
 
+---
+
+## Phase 3: Enterprise Service Provisioning & Web Server Deployment
+
+The Linux node infrastructure layout has concluded with the successful deployment of a public-facing system web application daemon.
+
+### 1. Service Deployment Parameters
+- **Application Engine:** Apache2 HTTP Server (Open-Source Web Daemon)
+- **Service Controller Tooling:** Systemd Initialization Daemon (`systemctl`)
+- **System Constraints Applied:** Initialized the baseline runtime module (`sudo systemctl start apache2`) and committed a boot-persistence parameter configuration (`sudo systemctl enable apache2`) to guarantee software availability upon system power cycles.
+
+### 2. Visual Verification
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/45ad4138-94bb-4ba5-ba5a-10c28f976f8e" />
+
+
+## Project Conclusion & Core Competencies Demonstrated
+This lab validates practical cross-platform competencies critical for systems administration and helpdesk engineer support roles:
+- **Systems Administration CLI:** Advanced command navigation across the Bash Shell environment and administrative privilege escalations using `sudo`.
+- **Infrastructure Troubleshooting:** Rectified automated hypervisor network adapter bindings, mapping fixed interface signatures via terminal input code arrays.
+- **Service Lifecycle Management:** Package execution, service status auditing, and system boot profile modifications.
 
