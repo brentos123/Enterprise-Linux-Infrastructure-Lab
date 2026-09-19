@@ -12,7 +12,7 @@ The lab is a single Ubuntu Server node on the same isolated lab network I used f
 - **OS:** Ubuntu Linux 20.04 LTS
 - **Hostname:** `Corp-Linux-Web01`
 - **Specs:** 2 vCPU / 2 GB vRAM / 20 GB disk
-- **Network:** `VMnet1 (Host-only)` — same isolated lab subnet as my AD lab, no internet access
+- **Network:** `VMnet1 (Host-only)` same isolated lab subnet as my AD lab, no internet access
 
 ---
 
@@ -31,7 +31,7 @@ Deployed a fresh Ubuntu Server 20.04 VM, bound to the isolated `VMnet1` host-onl
 
 ### Issue: wrong network, dynamic IP
 
-Running `ip a` after boot showed the VM had picked up a dynamic IP (`192.168.93.130`) from VMware's default NAT network — not the isolated lab subnet I wanted it on.
+Running `ip a` after boot showed the VM had picked up a dynamic IP (`192.168.93.130`) from VMware's default NAT network, not the isolated lab subnet I wanted it on.
 
 **Root cause:** the VM's network adapter was still set to VMware's default NAT mode instead of the host-only `VMnet1` switch I'd built for the lab.
 
